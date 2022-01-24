@@ -18,32 +18,32 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container container-header">
-        <nav class="header-nav">
-          <a class="link logo" href="./index.html"
-            >Web<span class="logo-second-word">Studio</span></a
+      <div class="container header__container">
+        <nav class="header__nav">
+          <a class="header__logo link logo" href="./index.html"
+            >Web<span class="header__logo--second-word">Studio</span></a
           >
-          <ul class="header-nav-list">
-            <li class="header-item qqq"><a class="link link-studio active" href="./index.html">Cтyдия</a></li>
-            <li class="header-item"><a class="link" href="./portfolio.html">Портфолио</a></li>
-            <li class="header-item"><a class="link" href="">Контакты</a></li>
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a class="header__nav-link header__nav-list--active" href="./index.html">Cтyдия</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="./portfolio.html">Портфолио</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="">Контакты</a></li>
           </ul>
         </nav>
         
-        <ul class="header-adress-list">
-          <li class="nav-item">
-            <a class="link" href="mailto:info@devstudio.com"> 
-              <svg class="header-icon" width="16" height="12">
+        <ul class="header__adress-list">
+          <li class="header__adress-item">
+            <a class="header__adress-link" href="mailto:info@devstudio.com"> 
+              <svg class="header__icon" width="16" height="12">
                 <use href="images/sprite.svg#icon-envelope"></use>
               </svg>info@devstudio.com</a>
           </li>
-          <li class="nav-item">
-            <a class="link" href="tel:+380961111111">
-            <svg class="header-icon" width="10" height="16">
+          <li class="header__adress-item">
+            <a class="header__adress-link" href="tel:+380961111111">
+            <svg class="header__icon" width="10" height="16">
                 <use href="images/sprite.svg#icon-smartphone"></use>
               </svg>+38 096 111 11 11</a>
             </li>
@@ -52,44 +52,44 @@
     </header>
 
     <main>
-      <section class="section section-title">
+      <section class="section-hero">
         <div class="container">
-          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <h1 class="section-hero__title">Эффективные решения для вашего бизнеса</h1>
 <!-- -----------------Modal--------------------------------------------------- -->
-          <button data-modal-open class="hero-button" type="button">Заказать услугу</button>
+          <button data-modal-open class="button" type="button">Заказать услугу</button>
           <div data-modal class="backdrop is-hidden">
             <div class="modal">
-              <button data-modal-close class="modal-button" type="button">
-                <svg class="modal-svg" width="18px" height="18px">
+              <button data-modal-close class="modal__button" type="button">
+                <svg class="modal__close-icon" width="18px" height="18px">
                   <use href="./images/sprite.svg#icon-close-icon" />
                 </svg>
               </button>
-              <p class="modal-title-text">Оставьте свои данные, мы вам перезвоним</p>
+              <p class="modal__title-text">Оставьте свои данные, мы вам перезвоним</p>
               <form action="#" class="js-speaker-form">
-                <div class="input-container">
-                <label class="modal-text" for="name">Имя</label>
-                <div class="input-wraper">
-                <input class="input-box" type="text" name="name" id="name">
-                <svg class="modal-icon" width="18px" height="18px">
+                <div class="modal__input-container">
+                <label class="modal__text" for="name">Имя</label>
+                <div class="modal__input-wraper">
+                <input class="input__box" type="text" name="name" id="name">
+                <svg class="modal__icon" width="18px" height="18px">
                   <use href="./images/sprite.svg#icon-person-modal" ></use>
                 </svg>
                 </div>
-                <label class="modal-text" for="tel">Телефон</label>
-                <div class="input-wraper">
-                <input class="input-box " type="tel" name="tel" id="tel" required>
-                <svg class="modal-icon" width="18px" height="18px">
+                <label class="modal__text" for="tel">Телефон</label>
+                <div class="modal__input-wraper">
+                <input class="input__box " type="tel" name="tel" id="tel" required>
+                <svg class="modal__icon" width="18px" height="18px">
                   <use href="./images/sprite.svg#icon-phone-modal" ></use>
                 </svg>
                 </div>
-                <label class="modal-text" for="mail">Почта</label>
-                <div class="input-wraper">
-                <input class="input-box" type="email" name="mail" id="mail">
-                <svg class="modal-icon" width="18px" height="18px">
+                <label class="modal__text" for="mail">Почта</label>
+                <div class="modal__input-wraper">
+                <input class="input__box" type="email" name="mail" id="mail">
+                <svg class="modal__icon" width="18px" height="18px">
                   <use href="./images/sprite.svg#icon-email-modal" ></use>
                 </svg>
                 </div>
                 </div>
-                <label class="modal-text" for="comment">Комментарий</label>
+                <label class="modal__text" for="comment">Комментарий</label>
                 <textarea class="modal-textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
                 
                 <div class="checkbox-container">
@@ -102,7 +102,7 @@
                   </span>Соглашаюсь с рассылкой и принимаю <a class="checkbox-link" href="#">Условия договора</a>
                 </label>
                 </div> 
-                <button class="modal-submit-button" type="submit">Отправить</button>
+                <button class="button" type="submit">Отправить</button>
 
                 
 
@@ -501,7 +501,7 @@
               <input class="footer-input" type="email" name="mail" id="" placeholder="E-mail">
             
               <div class="footer-button-container">
-                <button class="footer-button">Подписаться<svg class="footer-icon" width="24px" height="24px"><use href="./images/sprite.svg#icon-send-footer"></use></svg> </button>
+                <button class="button">Подписаться<svg class="footer-icon" width="24px" height="24px"><use href="./images/sprite.svg#icon-send-footer"></use></svg> </button>
               </div>
             </div>
             </div>
