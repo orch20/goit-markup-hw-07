@@ -1,0 +1,106 @@
+.footer {
+  background-color: var(--second-background-color);
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.footer > .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__adress-wrap {
+  margin-right: 70px;
+}
+.footer__logo--white {
+  color: var(--white-font-color);
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer__location-link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--white-font-color);
+}
+
+.footer__link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.footer__social-link-wrap {
+  margin-right: 93px;
+}
+
+.footer__title {
+  color: var(--white-font-color);
+  margin-bottom: 20px;
+}
+.footer__social-link-list {
+  @extend %flexCenter;
+}
+
+.footer-social-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--white-font-color);
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__svg {
+  fill: currentColor;
+}
+.footer-social-link-item + .footer-social-link-item {
+  margin-left: 10px;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--brand-color);
+}
+
+.footer__input {
+  background-color: transparent;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 15px;
+}
+.footer__input-container {
+  @extend %flexCenter;
+}
+
+.footer-button-container {
+  margin: auto 0 auto 12px;
+}
+
+.footer-icon {
+  margin-left: 10px;
+  fill: var(--white-font-color);
+}
