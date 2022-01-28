@@ -1,8 +1,6 @@
 .social-link {
   &__list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flexCenter;
   }
 
   &__link {
